@@ -15,5 +15,5 @@ jobs:
       uses: ilammy/msvc-dev-cmd@v1.10.0
     - name: Compile
       run: |
-        cd Xmake
-        cl Xmake.cpp function.cpp help.cpp Global.cpp 
+        cd "Cpp Project Maker"
+        cl "Cpp Project Maker.cpp" "Global.cpp"
