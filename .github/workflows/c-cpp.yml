@@ -1,4 +1,4 @@
-name: C/C++ CI Linux Build
+name: C/C++ CI Windows build
 
 on:
   push:
@@ -8,12 +8,12 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
     - uses: actions/checkout@v2
-    - name: setup
-      run: sudo apt install g++
-    - name: compile
+    - name: Enable Developer Command Prompt
+      uses: ilammy/msvc-dev-cmd@v1.10.0
+    - name: Compile
       run: |
-        cd "Cpp Project Maker"
-        g++ "Cpp Project Maker.cpp" "Global.cpp"
+        cd Xmake
+        cl Xmake.cpp function.cpp help.cpp Global.cpp 
