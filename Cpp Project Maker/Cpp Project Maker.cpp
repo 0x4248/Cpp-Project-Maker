@@ -7,7 +7,7 @@
 using namespace std;
 int main()
 {
-	cout << "Welcome to the C++ Project Maker " << ver <<"\n";
+	cout << "Welcome to the C++ Project Maker " << ver <<" " << build_type<<"\n";
 	char response;
 	cout << "--------------------\n";
 	cout << "Do you want to continue (Y/N):";
