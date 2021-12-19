@@ -16,4 +16,4 @@ jobs:
     - name: Compile
       run: |
         cd "Cpp Project Maker"
-        cl "Cpp Project Maker.cpp" "Global.cpp"
+        cl "Cpp Project Maker.cpp" "Global.cpp" /std:c++17
