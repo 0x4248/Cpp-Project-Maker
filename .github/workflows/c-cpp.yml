@@ -1,0 +1,19 @@
+name: C/C++ CI Linux Build
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: setup
+      run: sudo apt install g++
+    - name: compile
+      run: |
+        cd "Cpp Project Maker"
+        g++ "Cpp Project Maker.cpp" "Global.cpp"
