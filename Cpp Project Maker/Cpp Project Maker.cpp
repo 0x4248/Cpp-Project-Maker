@@ -126,7 +126,7 @@ int main()
 	hglobal << "#include <fstream>\n";
 	hglobal << "#include <string>\n";
 	hglobal << "#include <stdlib.h>\n";
-	hglobal << "extern std::string ver;\n";
+	hglobal << "extern std::string version;\n";
 	hglobal << "extern std::string build_type;\n";
 	hglobal << "#endif	\n";
 	hglobal.close();
