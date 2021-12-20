@@ -36,4 +36,10 @@ build/
 debug/
 x86/
 x64/
-/.vs
+.vs/
+
+# Test project names
+test/
+test_project/
+testing/
+project/
