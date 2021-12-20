@@ -106,7 +106,7 @@ int main()
 	cppglobal.open(projectname + "/Global.cpp");
 	cppglobal << "//" << projectname << " Global file\n";
 	cppglobal << "// - Only put variables for build and other scripts \n";
-	cppglobal << "// - Do not put varible names that contain names from other headers or scripts\n";
+	cppglobal << "// - Do not put variable names that contain names from other headers or scripts\n";
 	cppglobal << "#include " << '"' << "Global.h" << '"' << "\n";
 	cppglobal << "#include <fstream>\n";
 	cppglobal << "#include <string>\n";
@@ -119,7 +119,7 @@ int main()
 	cout << "[ \033[0;32mOK \033[0;37m] Creating cpp header file\n";
 	hglobal << "//" << projectname << " Global file\n";
 	hglobal << "// - Only put variables for build and other scripts \n";
-	hglobal << "// - Do not put varible names that contain names from other headers or scripts\n";
+	hglobal << "// - Do not put variable names that contain names from other headers or scripts\n";
 	hglobal << "#ifndef GLOBALS\n";
 	hglobal << "#define GLOBALS\n";
 	hglobal << "#include <iostream>\n";
