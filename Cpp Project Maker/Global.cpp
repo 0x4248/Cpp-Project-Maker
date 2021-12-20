@@ -5,5 +5,5 @@
 #include <fstream>
 #include <string>
 #include <stdlib.h>
-std::string ver ="0.1.1.0";
+std::string ver ="0.1.2.0";
 std::string build_type = "BETA";
