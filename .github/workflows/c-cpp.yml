@@ -1,0 +1,19 @@
+name: C/C++ CI Windows build
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Enable Developer Command Prompt
+      uses: ilammy/msvc-dev-cmd@v1.10.0
+    - name: Compile
+      run: |
+        cd "Cpp Project Maker"
+        cl "Cpp Project Maker.cpp" "Global.cpp" /std:c++17
