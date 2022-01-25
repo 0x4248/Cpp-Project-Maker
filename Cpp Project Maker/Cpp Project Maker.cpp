@@ -90,7 +90,7 @@ int main()
 		cout << "[ \033[0;32mOK \033[0;37m] Creating bin directory\n";
 	filesystem::create_directory(projectname+"/bin");
 	ofstream mainfile;
-	cout << "[ \033[0;32mOK \033[0;37m] Creating mainfile\n";
+	cout << "[ \033[0;32mOK \033[0;37m] Creating main.cpp\n";
 	mainfile.open(projectname + "/main.cpp");
 	mainfile << "//Project:" + projectname + "\n";
 	mainfile << "//Author:" + name + "\n";
@@ -102,7 +102,7 @@ int main()
 	mainfile << "}\n";
 	mainfile.close();
 	ofstream cppglobal;
-	cout << "[ \033[0;32mOK \033[0;37m] Creating cpp global file\n";
+	cout << "[ \033[0;32mOK \033[0;37m] Creating Global.cpp\n";
 	cppglobal.open(projectname + "/Global.cpp");
 	cppglobal << "//" << projectname << " Global file\n";
 	cppglobal << "// - Only put variables for build and other scripts \n";
@@ -116,7 +116,7 @@ int main()
 	cppglobal.close();
 	ofstream hglobal;
 	hglobal.open(projectname + "/Global.h");
-	cout << "[ \033[0;32mOK \033[0;37m] Creating cpp header file\n";
+	cout << "[ \033[0;32mOK \033[0;37m] Creating Global.h\n";
 	hglobal << "//" << projectname << " Global file\n";
 	hglobal << "// - Only put variables for build and other scripts \n";
 	hglobal << "// - Do not put variable names that contain names from other headers or scripts\n";
@@ -130,11 +130,11 @@ int main()
 	hglobal << "extern std::string build_type;\n";
 	hglobal << "#endif	\n";
 	hglobal.close();
-	cout << "[ \033[0;32mOK \033[0;37m] Creating readme\n";
+	cout << "[ \033[0;32mOK \033[0;37m] Creating read me\n";
 	ofstream readme;
 	readme.open(projectname + "/README.md");
 	readme << "#" << projectname << "\n";
 	readme << "By:" << name << "\n";
-	cout << "{\n      projectname:" << projectname << ",\n      author:" << name << "\n}\n";
-	cout << "Done making project " << projectname << "\n";
+	cout << "{\n      project_name:" << projectname << ",\n      author:" << name << "\n}\n";
+	cout << "Done making project go have a look and good luck with " << projectname << "\n";
 }
