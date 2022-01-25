@@ -12,12 +12,9 @@ using namespace std;
 
 int dirExists(const char* const path)
 {
-	//Checks to see if a directory exists. Note: This method only checks the
-	//existence of the full path AND if path leaf is a dir.
-	//
-	//@return  >0 if dir exists AND is a dir,
-	//          0 if dir does not exist OR exists but not a dir,
-	//          <0 if an error occurred (errno is also set)
+	//>0 if dir exists AND is a dir,
+	//0 if dir does not exist OR exists but not a dir,
+	//<0 if an error occurred (errno is also set)
 
 	struct stat info;
 
