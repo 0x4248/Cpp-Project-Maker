@@ -1,0 +1,14 @@
+{
+    "name": "Cpp-Project-Maker",
+    "description": "Quickly make a C++ project from the terminal",
+    "version": "",
+    "main_file": "Cpp Project Maker/Cpp Project Maker.cpp",
+    "author": "Lewis Evans",
+    "license": "GNU General Public License v3.0",
+    "url": "https://www.github.com/awesomelewis2007/Cpp-Project-Maker",
+    "email": "none",
+    "languages": [
+        "c++"
+    ],
+    "actions": {}
+}
