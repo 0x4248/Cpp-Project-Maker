@@ -1,5 +1,5 @@
 // Cpp Project Maker
-// By:lewisevans2007
+// By:0x4248
 #include "Global.h"
 #include <algorithm>
 #include <filesystem>
